@@ -1,14 +1,7 @@
-function pyramid(numPisos) {
-    // for (let i = 0; i < numPisos; i++) {
-    //   let piso = '';
-    //   for (let j = 0; j < i + 1; j++) {
-    //     piso = piso + '*';
-    //   }
-    //   console.log(piso)
-    // }
-    for(let i = 0; i < numPisos; i++){
+function staircase(n) {
+    for(let i = 0; i < n; i++){
         let floor = ''
-        for(let j = 1; j < numPisos - i; j++){
+        for(let j = 1; j < n - i; j++){
             floor = floor + ' ';
         }
         for(let j = 0; j < i + 1; j++){
@@ -18,4 +11,4 @@ function pyramid(numPisos) {
     }
 }
   
-  pyramid(6);
+staircase(6);
